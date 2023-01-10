@@ -1,0 +1,74 @@
+@import'_mixins.scss';
+footer{
+    position: relative;
+    background: #026064;
+    margin-top: 105px;
+}
+.footer{
+    &__container{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        padding: 75px 15px 0 15px;
+        margin: 0 362px;
+        gap:0 20px;
+    }
+    h7{
+        @include title;
+    }
+    h8{
+        @include title;
+        padding-left: 40px;
+    }
+    h9{
+        padding-left: 15px;
+        @include title;
+    }
+    h10{
+        @include title;
+        padding-left: 15px;
+    }
+    ul{
+        padding: 0;
+    }
+    li{ 
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+        line-height: 25px;
+        list-style: none;
+        &:hover{
+            color: darkred;
+        }
+    }
+    p{  
+        padding: 10px 0;
+        color: #fff;
+        margin: 0;
+    }
+    &__copyright{
+        padding: 10px 0;
+        margin-left: 750px;
+    } 
+    a{
+        padding-top: 10px;
+        margin-right: 10px;
+    }
+    i{
+        padding: 10px;
+        @include color;
+        &:hover{
+            background-color: aqua;
+            transition: 1s;
+        }
+    }
+  
+}
+.bar{
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background: #fff;
+    transform: translateX(65%);
+    bottom: 72%;
+
+}
